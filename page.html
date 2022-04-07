@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+    
+    <!-- N'oublie pas de changer le titre de tes pages des différents types de projets -->
+    <title>Bienvenue sur le site de Roxanne Anèse / Projets d'affiches</title>
+</head>
+<body>
+        <!-- On retrouve notre Header ici -->
+        <header><a href="index.html" id="retour">Retour</a><h1>Roxanne Anèse</h1><h2>/ Affiches</h2></header>
+
+        <!-- Et on retrouve notre élément Main aussi -->
+        <main>
+
+            <!-- Ici notre module projet, qui contient deux div, texte et image. la div image contient à sont tou une div slider. Voir les CSS pour plus d'infos -->
+            <div class="projet">
+                <div class="texte"><h3>Ciné-club</h3>Ces posters sont réalisés dans le cadre d’un projet fictif de ciné-club. Les visuels sont créés à partir de papiers découpés : des images clés de chaque film sont tramées puis imprimées. Les différents titres sont signifiés par la trace et le caractère indiciel de l’image. Les affiches finales sont des photographies de ces collages, permettant de jouer avec l’angle de prise de vue. Cette méthode de travail permet de s’affranchir d’une grille de composition.</div>
+                <div class="image">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="img/cine_club_1.jpg" /></li>
+                          <li><img src="img/cine_club_2.jpg" /></li>
+                          <li><img src="img/cine_club_3.jpg" /></li>
+                          <li><img src="img/cine_club_4.jpg" /></li>
+                        </ul>
+                      </div> <!-- Fin du carrousel/slider -->
+                </div> <!-- Fin de la zone image -->
+            </div> <!-- Fin du module projet -->
+       
+            
+            <!-- Ici un second module projet -->
+            <div class="projet">
+                <div class="texte"><h3>Titre du projet</h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem debitis nihil earum mollitia, id dicta nisi ipsam deleniti consectetur neque sunt cumque officiis optio quos doloremque eum et culpa accusamus.</div>
+                <div class="image">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="img/cine_club_1.jpg" /></li>
+                          <li><img src="img/cine_club_2.jpg" /></li>
+                          <li><img src="img/cine_club_3.jpg" /></li>
+                          <li><img src="img/cine_club_4.jpg" /></li>
+                        </ul>
+                      </div> <!-- Fin du carrousel/slider -->
+                </div> <!-- Fin de la zone image -->
+            </div> <!-- Fin du module projet -->
+
+
+            <!-- Ici un troisième module projet -->
+            <div class="projet">
+                <div class="texte"><h3>Titre du projet</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem debitis nihil earum mollitia, id dicta nisi ipsam deleniti consectetur neque sunt cumque officiis optio quos doloremque eum et culpa accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem debitis nihil earum mollitia, id dicta nisi ipsam deleniti consectetur neque sunt cumque officiis optio quos doloremque eum et culpa accusamus.</div>
+                <div class="image">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="img/cine_club_1.jpg" /></li>
+                          <li><img src="img/cine_club_2.jpg" /></li>
+                          <li><img src="img/cine_club_3.jpg" /></li>
+                          <li><img src="img/cine_club_4.jpg" /></li>
+                        </ul>
+                      </div> <!-- Fin du carrousel/slider -->
+                </div> <!-- Fin de la zone image -->
+            </div> <!-- Fin du module projet -->
+        
+        
+        
+        </main><!-- Fin du Main -->
+  
+        
+<!-- Script jQuery / Nécessaire au JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+<!-- FlexSlider / JS supplémentaire nécessaire au Slider/carrousel-->
+<script defer src="jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function (slider) {
+        $('body').removeClass('loading');
+      }
+    });
+  });
+</script>
+</body>
+</html>
